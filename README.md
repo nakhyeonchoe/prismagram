@@ -190,7 +190,8 @@ yarn prisma init
 yarn prisma deploy
 ```
  
- 
+# primsa console에서 name 에러 발생 하는 경우 
+
  
 
 
