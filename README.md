@@ -3,11 +3,13 @@ Instagram clone with Express + Prisma + React and React Native
 
 
 #yarn init
-#yarn add graphql-yoga
-#yarn add babel-cli -D 
+#install library 
+```
+yarn add graphql-yoga
+yarn add babel-cli -D 
+```
 
-##edit package.json
-#add 
+##edit package.json 
 ```
   "dependencies": {
     "graphql-yoga": "^1.17.4"
