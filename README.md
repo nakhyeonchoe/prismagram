@@ -152,8 +152,48 @@ typeDefs, resolvers 제거 후 하나로 합쳐진 schema 입력
 # edit sayHello.graphql
   Query 추가 후 export default 
   
-  
-  
+# 4. Prisma
+* Prisma ? ORM(Object-relational mapping) - 객체 관계 연결 
+* Why use ? 데이터베이스가 해결하기 어려운 것들을 해결 해 준다. 
+* ORM 종류 ? typeorm, diango orm, sequlize 
+* 특징 ? 어플리케이션에 필요한 모델을 graphql로 정의 할 수 있다는 점에서 특별하다. 
+* 모델을 정의 할 수 있음(user, Post, ... etc) 
+
+# GO To link 
+* https://app.prisma.io/
+* Join 
+
+# run prisma login 
+```
+yarn prisma login -k ~~~
+```
+# create new prisma 
+```
+yarn prisma init
+```
+# 데이터 베이스 환경 설정
+ * Demo server + MySQL database 선택 
+  * 선택 사항: 기존 데이터 베이스 사용 or 새로 생성 or Demo Server or use Other server 
+ * nhyeonchoe-8186ea/demo-us1 선택
+  * 선택 사항: es or us 
+ * service ? prismagram
+ * stage? dev
+ * Prisma JavaScript Client 
+ => generated 폴더 생성 
+
+# edit .gitignore
+ * 하단에 generated 추가 
+ 
+# datamodel.prisma 형태 확인 
+# prisma 실행
+```
+yarn prisma deploy
+```
+ 
+ 
+ 
+
+
   
 #Tip
 * 모든 설정 값들을 env에 추가하는 습관 만들기 
